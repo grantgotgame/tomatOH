@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 1742791256}
   - component: {fileID: 1742791258}
   - component: {fileID: 1742791259}
-  - component: {fileID: 1742791260}
+  - component: {fileID: 1742791261}
   m_Layer: 0
   m_Name: Tomato Controller
   m_TagString: Untagged
@@ -807,6 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
+  dashForce: 30
 --- !u!114 &1742791259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,8 +838,8 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerInputs
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 1234996400}
---- !u!65 &1742791260
-BoxCollider:
+--- !u!135 &1742791261
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -856,8 +857,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9987516, y: 2.7727842, z: 1.9987507}
-  m_Center: {x: 0, y: -0.51186013, z: -0.0000009536743}
+  m_Radius: 0.89
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &172069453423607853
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,7 +1219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3789794173714483756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7731735782759989782
 Transform:
   m_ObjectHideFlags: 0
