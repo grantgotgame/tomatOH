@@ -4875,8 +4875,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547866967}
   m_LocalRotation: {x: 0, y: 0.50904137, z: 0, w: 0.86074203}
-  m_LocalPosition: {x: -9.6, y: -0, z: 19.5}
-  m_LocalScale: {x: 21.5, y: 1, z: 21.5}
+  m_LocalPosition: {x: -11.9, y: 0, z: 18.2}
+  m_LocalScale: {x: 26.2515, y: 1.221, z: 26.2515}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1282280344}
@@ -5153,7 +5153,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.96
+  m_Radius: 2.25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1754288125
 GameObject:
@@ -5980,7 +5980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022677869}
   m_Layer: 0
-  m_Name: Chef
+  m_Name: Enemy Chef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5994,7 +5994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022677868}
   m_LocalRotation: {x: 0, y: -0.34218413, z: 0, w: 0.93963295}
-  m_LocalPosition: {x: 59.9, y: 8.3, z: -2.3}
+  m_LocalPosition: {x: 59.9, y: 9.6, z: -2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6089,14 +6089,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033657295}
-  m_LocalRotation: {x: 0.3899063, y: 0.004083234, z: -0.009642884, w: 0.92079496}
-  m_LocalPosition: {x: 2.3, y: 35, z: -5.1}
+  m_LocalRotation: {x: 0.33131978, y: 0.0034696953, z: -0.009880245, w: 0.9434604}
+  m_LocalPosition: {x: -0.3, y: 24.6, z: -7.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45.9, y: 0, z: -1.2}
+  m_LocalEulerAnglesHint: {x: 38.7, y: 0, z: -1.2}
 --- !u!114 &2033657299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11544,14 +11544,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4364951715829949605}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 550, z: 350}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: -0.21, z: 5.83}
+  m_LocalScale: {x: 100.37383, y: 1010.3005, z: 433.01822}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3500904967579496746}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &407052815157926081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13302,9 +13302,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5297814622884817131}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.5577451, z: 0, w: 0.83001226}
+  m_LocalPosition: {x: 0, y: 0.35, z: 0}
+  m_LocalScale: {x: 2.5346632, y: 2.5346632, z: 2.5346632}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1836978332183383947}
@@ -13317,7 +13317,7 @@ Transform:
   - {fileID: 4190207612981649037}
   m_Father: {fileID: 1742791257}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 67.8, z: 0}
 --- !u!23 &4832664083894435451
 MeshRenderer:
   m_ObjectHideFlags: 0
