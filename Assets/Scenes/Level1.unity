@@ -5153,7 +5153,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2.25
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1754288125
 GameObject:
@@ -13304,8 +13304,8 @@ Transform:
   m_GameObject: {fileID: 5297814622884817131}
   m_LocalRotation: {x: 0, y: 0.5577451, z: 0, w: 0.83001226}
   m_LocalPosition: {x: 0, y: 0.35, z: 0}
-  m_LocalScale: {x: 2.5346632, y: 2.5346632, z: 2.5346632}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1836978332183383947}
   - {fileID: 1785464983627892587}
