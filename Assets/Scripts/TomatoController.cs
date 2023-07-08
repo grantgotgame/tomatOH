@@ -12,6 +12,9 @@ public class TomatoController : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float dashForce;
     [SerializeField] int playerHealth = 3;
+    public GameObject healthImage1;
+    public GameObject healthImage2;
+    public GameObject healthImage3;
 
     void Awake()
     {
@@ -54,12 +57,25 @@ public class TomatoController : MonoBehaviour
     }
 
     // Player loses health when colliding with an obstacle
-    private void OnCollisionEnter(Collision collision) {
+    private void OnCollisionEnter(Collision collision)
+    {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             playerHealth -= 1;
-            Debug.Log("Health: " + playerHealth);
+
+            // Update UI to show current health
+            if (playerHealth == 2)
+            {
+                healthImage3.SetActive(false);
+            }
+            else if (playerHealth == 1)
+            {
+                healthImage2.SetActive(false);
+            }
+            else if (playerHealth == 0)
+            {
+                healthImage1.SetActive(false);
+            }
         }
     }
-
 }
