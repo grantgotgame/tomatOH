@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class TomatoController : MonoBehaviour
 {
@@ -19,10 +20,23 @@ public class TomatoController : MonoBehaviour
         playerControl.PlayerInputs.Dash.performed += Dash_Performed;
     }
 
-    private void Dash_Performed(InputAction.CallbackContext obj)
+    public void Dash_Performed(InputAction.CallbackContext context)
     {
-        Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
-        playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
+        if(context.interaction is TapInteraction)
+        {
+            Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
+            playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
+            Debug.Log("simple dash!");
+        }
+        else if(context.interaction is HoldInteraction)
+        {
+            Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
+            playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce * 2, ForceMode.Impulse);
+            Debug.Log("Super dash!");
+        }
+
+
+        Debug.Log(context.interaction);
     }
 
     void FixedUpdate()
