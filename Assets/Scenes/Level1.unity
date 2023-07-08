@@ -7717,7 +7717,7 @@ GameObject:
   - component: {fileID: 1015717511511525072}
   - component: {fileID: 6142607217451761275}
   m_Layer: 0
-  m_Name: Rivet
+  m_Name: Bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
