@@ -215,25 +215,25 @@ MonoBehaviour:
     value: 1
   outlineColor:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.3018868, g: 0.06949092, b: 0.074443795, a: 1}
   colorSensitivity:
     overrideState: 1
     value: 1
   colorStrength:
     overrideState: 1
-    value: 1
+    value: 0.279
   depthSensitivity:
     overrideState: 1
-    value: 0.1
+    value: 1
   depthStrength:
     overrideState: 1
     value: 1
   normalSensitivity:
     overrideState: 1
-    value: 0.05
+    value: 0.338
   normalStrength:
     overrideState: 1
-    value: 0.6
+    value: 1
   depthThreshold:
     overrideState: 0
     value: 0.99
