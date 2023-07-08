@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3fe6ee1e079122f43bbc063e6e322fa0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Volumes/BasicDither_Blue.asset
+  uploadId: 575702

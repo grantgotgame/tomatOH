@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1501953731534957082
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d61ec3792630840bdd5ffcd5b4619d, type: 3}
+  m_Name: Drawing
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  drawingTex:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 54f7be4dea49e1a46a30a01a74f50453, type: 3}
+    defaultState: 1
+  animCycleTime:
+    overrideState: 1
+    value: 1.81
+  strength:
+    overrideState: 1
+    value: 0.16
+  tiling:
+    overrideState: 1
+    value: 25
+  smudge:
+    overrideState: 1
+    value: 0.001
+  depthThreshold:
+    overrideState: 1
+    value: 0.99
+--- !u!114 &-702706524837312576
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8f82b3a6922ec49931dd65e989fb90, type: 3}
+  m_Name: Pixelate
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  pixelSize:
+    overrideState: 1
+    value: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: 5213687109019083177}
+  - {fileID: 5420695939016064374}
+  - {fileID: -702706524837312576}
+  - {fileID: 2322453495431686207}
+  - {fileID: 126846273477742068}
+  - {fileID: 2077371260752591057}
+  - {fileID: -1501953731534957082}
+--- !u!114 &126846273477742068
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc1134c094d75546b9bfc5e0d97d88a, type: 3}
+  m_Name: SNES
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  bandingLevels:
+    overrideState: 1
+    value: 12
+  powerRamp:
+    overrideState: 1
+    value: 1.24
+--- !u!114 &2077371260752591057
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d319aa5acb11334e8fdffd52c725af9, type: 3}
+  m_Name: BasicDither
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  noiseTex:
+    overrideState: 1
+    value: {fileID: 2800000, guid: a94bfda7dbfbf074a9f6a51c015c83ea, type: 3}
+    defaultState: 1
+  noiseSize:
+    overrideState: 1
+    value: 0.9
+  thresholdOffset:
+    overrideState: 1
+    value: -0.11
+  darkColor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  lightColor:
+    overrideState: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
+  useSceneColor:
+    overrideState: 1
+    value: 1
+--- !u!114 &2322453495431686207
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e31fc21cd4ac445ab92b6c024d95f7, type: 3}
+  m_Name: Sharpen
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 1
+--- !u!114 &5213687109019083177
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 1
+  threshold:
+    overrideState: 1
+    value: 0.9
+  softKnee:
+    overrideState: 0
+    value: 0.5
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 0
+    value: 7
+  anamorphicRatio:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0
+--- !u!114 &5420695939016064374
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f51651a7adb5ee47a5bf82e83175f39, type: 3}
+  m_Name: Outline
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  outlineColor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  colorSensitivity:
+    overrideState: 1
+    value: 1
+  colorStrength:
+    overrideState: 1
+    value: 1
+  depthSensitivity:
+    overrideState: 1
+    value: 0.1
+  depthStrength:
+    overrideState: 1
+    value: 1
+  normalSensitivity:
+    overrideState: 1
+    value: 0.05
+  normalStrength:
+    overrideState: 1
+    value: 0.6
+  depthThreshold:
+    overrideState: 0
+    value: 0.99
+  backgroundColor:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  useSceneColor:
+    overrideState: 1
+    value: 1

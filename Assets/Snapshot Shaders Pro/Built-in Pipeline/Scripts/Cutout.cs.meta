@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: eea8f75ac40b25241b88cc8b58e98e64
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scripts/Cutout.cs
+  uploadId: 575702

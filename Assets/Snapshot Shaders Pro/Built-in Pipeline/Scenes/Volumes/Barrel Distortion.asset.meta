@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ef724ba431004ee4593aea8b8935ce32
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Volumes/Barrel
+    Distortion.asset
+  uploadId: 575702

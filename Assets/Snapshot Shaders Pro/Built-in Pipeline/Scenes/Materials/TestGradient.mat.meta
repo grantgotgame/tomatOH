@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6dbb1d7a379c9ca4fa81879226c9b05c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Materials/TestGradient.mat
+  uploadId: 575702

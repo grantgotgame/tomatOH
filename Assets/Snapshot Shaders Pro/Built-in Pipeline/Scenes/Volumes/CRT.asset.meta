@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5e469146aa040ed458c1f41944fada04
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Volumes/CRT.asset
+  uploadId: 575702

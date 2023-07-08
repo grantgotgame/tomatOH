@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9eed74e37ccd3e04cba7040a3af171fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Prefabs/ExampleStand_WorldScan.prefab
+  uploadId: 575702

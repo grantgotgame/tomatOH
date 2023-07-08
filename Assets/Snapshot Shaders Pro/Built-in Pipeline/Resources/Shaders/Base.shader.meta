@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5987ecc6ccb22824cbfc56363a6ab2dc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Resources/Shaders/Base.shader
+  uploadId: 575702

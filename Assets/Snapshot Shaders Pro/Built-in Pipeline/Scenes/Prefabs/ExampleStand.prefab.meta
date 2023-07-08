@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e28f8d651063dc14a93d33ca966ceaf8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/Prefabs/ExampleStand.prefab
+  uploadId: 575702

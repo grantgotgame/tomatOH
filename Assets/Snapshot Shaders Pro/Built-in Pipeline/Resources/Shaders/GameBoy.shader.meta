@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9a1402e9baf45fa4fac2efc36b5cef23
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Resources/Shaders/GameBoy.shader
+  uploadId: 575702

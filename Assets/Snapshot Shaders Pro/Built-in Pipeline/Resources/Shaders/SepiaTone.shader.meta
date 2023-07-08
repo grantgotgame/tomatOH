@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 43d270541328a5d4a993ec51c9077014
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Resources/Shaders/SepiaTone.shader
+  uploadId: 575702

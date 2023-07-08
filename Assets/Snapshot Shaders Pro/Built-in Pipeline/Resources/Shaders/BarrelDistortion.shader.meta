@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 62db99addfd2ac541810cc58c0a23a10
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Resources/Shaders/BarrelDistortion.shader
+  uploadId: 575702

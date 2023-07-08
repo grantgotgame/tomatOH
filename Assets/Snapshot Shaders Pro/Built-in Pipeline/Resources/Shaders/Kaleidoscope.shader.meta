@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b4c409d5d0e4a5a4db9bb8676173ed9b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Resources/Shaders/Kaleidoscope.shader
+  uploadId: 575702

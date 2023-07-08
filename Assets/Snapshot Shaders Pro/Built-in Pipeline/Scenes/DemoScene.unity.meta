@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2074cf94e338f9e428586c958795d7b4
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 160556
+  packageName: Snapshot Shaders Pro for URP, HDRP & Built-in
+  packageVersion: 1.6
+  assetPath: Assets/Snapshot Shaders Pro/Built-in Pipeline/Scenes/DemoScene.unity
+  uploadId: 575702

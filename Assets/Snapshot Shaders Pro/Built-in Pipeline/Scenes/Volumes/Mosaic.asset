@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2745027574377066858
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5613533c680524040a65653dfb243778, type: 3}
+  m_Name: Mosaic
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  overlayTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: d11d75f0f3add3141ab3fb41fcc72ef7, type: 3}
+    defaultState: 1
+  overlayColor:
+    overrideState: 1
+    value: {r: 0.1981132, g: 0.16893321, b: 0.13550195, a: 1}
+  xTileCount:
+    overrideState: 0
+    value: 100
+  usePointFiltering:
+    overrideState: 0
+    value: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Mosaic
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -2745027574377066858}
