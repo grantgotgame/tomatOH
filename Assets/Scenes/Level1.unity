@@ -764,6 +764,7 @@ GameObject:
   - component: {fileID: 267260744}
   - component: {fileID: 267260747}
   - component: {fileID: 267260745}
+  - component: {fileID: 267260748}
   m_Layer: 0
   m_Name: Invisible Wall (2)
   m_TagString: Untagged
@@ -816,6 +817,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267260743}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &267260748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267260743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!1 &279476719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1692,7 @@ GameObject:
   - component: {fileID: 677645991}
   - component: {fileID: 677645994}
   - component: {fileID: 677645992}
+  - component: {fileID: 677645995}
   m_Layer: 0
   m_Name: Invisible Wall
   m_TagString: Untagged
@@ -1730,6 +1745,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677645990}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &677645995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677645990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!1 &681446660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,6 +2620,7 @@ GameObject:
   - component: {fileID: 948587142}
   - component: {fileID: 948587145}
   - component: {fileID: 948587143}
+  - component: {fileID: 948587146}
   m_Layer: 0
   m_Name: Invisible Wall (3)
   m_TagString: Untagged
@@ -2644,6 +2673,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948587141}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &948587146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948587141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!1 &953453884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,6 +3217,7 @@ GameObject:
   - component: {fileID: 1282280344}
   - component: {fileID: 1282280347}
   - component: {fileID: 1282280345}
+  - component: {fileID: 1282280348}
   m_Layer: 0
   m_Name: Invisible Ceiling
   m_TagString: Untagged
@@ -3227,6 +3270,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282280343}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1282280348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282280343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!1 &1307407646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,6 +3507,7 @@ GameObject:
   - component: {fileID: 1395122713}
   - component: {fileID: 1395122716}
   - component: {fileID: 1395122714}
+  - component: {fileID: 1395122717}
   m_Layer: 0
   m_Name: Invisible Wall (1)
   m_TagString: Untagged
@@ -3503,6 +3560,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395122712}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1395122717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395122712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!1 &1473163749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,7 +4053,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!4 &1742791257
 Transform:
   m_ObjectHideFlags: 0
@@ -6603,6 +6673,7 @@ GameObject:
   - component: {fileID: 9014308174053350609}
   - component: {fileID: 585270510720761870}
   - component: {fileID: 9014308174053350610}
+  - component: {fileID: 9014308174053350611}
   m_Layer: 0
   m_Name: Blade
   m_TagString: Obstacle
@@ -7729,6 +7800,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 992beacda96a6442cbf223430ee17ca0, type: 3}
+--- !u!114 &9014308174053350611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364951715829949605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
 --- !u!33 &9036299388548214404
 MeshFilter:
   m_ObjectHideFlags: 0
