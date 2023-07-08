@@ -77,6 +77,7 @@ public class TomatoController : MonoBehaviour
             else if (playerHealth == 0)
             {
                 healthImage1.SetActive(false);
+                playerControl.PlayerInputs.Disable();
             }
         }
     }
