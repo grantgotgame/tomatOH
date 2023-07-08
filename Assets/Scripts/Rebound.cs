@@ -5,6 +5,8 @@ using UnityEngine;
 public class Rebound : MonoBehaviour
 {
     public float reboundForce = 3f;
+    [SerializeField] private ParticleSystem reboundVFX;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -13,5 +15,17 @@ public class Rebound : MonoBehaviour
             return;
 
         otherRigidBody.AddForce(-collision.relativeVelocity * reboundForce, ForceMode.Impulse);
+
+        PlayReboundVFX(collision);
+
+    }
+
+    public void PlayReboundVFX(Collision collision)
+    {
+        if (reboundVFX != null)
+        {
+            ParticleSystem instance = Instantiate(reboundVFX, collision.transform.position, reboundVFX.transform.rotation);
+            Destroy(instance.gameObject, instance.main.duration);
+        }
     }
 }

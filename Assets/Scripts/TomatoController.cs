@@ -15,6 +15,7 @@ public class TomatoController : MonoBehaviour
     public GameObject healthImage1;
     public GameObject healthImage2;
     public GameObject healthImage3;
+    [SerializeField] private ParticleSystem tomatoHitVFX;
 
     void Awake()
     {
@@ -61,6 +62,7 @@ public class TomatoController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            PlayHitVFX();
             playerHealth -= 1;
 
             // Update UI to show current health
@@ -78,4 +80,13 @@ public class TomatoController : MonoBehaviour
             }
         }
     }
+    public void PlayHitVFX()
+    {
+        if (tomatoHitVFX != null)
+        {
+            ParticleSystem instance = Instantiate(tomatoHitVFX, transform.position, tomatoHitVFX.transform.rotation);
+            Destroy(instance.gameObject, instance.main.duration);
+        }
+    }
+
 }
