@@ -11,6 +11,7 @@ public class TomatoController : MonoBehaviour
     private Rigidbody playerRb;
     [SerializeField] float speed;
     [SerializeField] float dashForce;
+    [SerializeField] int playerHealth = 3;
 
     void Awake()
     {
@@ -54,10 +55,10 @@ public class TomatoController : MonoBehaviour
 
     // Player loses health when colliding with an obstacle
     private void OnCollisionEnter(Collision collision) {
-        // Check if player is colliding with an obstacle
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("Collision!");
+            playerHealth -= 1;
+            Debug.Log("Health: " + playerHealth);
         }
     }
 
