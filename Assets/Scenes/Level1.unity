@@ -5120,7 +5120,7 @@ GameObject:
   - component: {fileID: 9036299388548214404}
   - component: {fileID: 6119429009515552798}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6603,7 +6603,7 @@ GameObject:
   - component: {fileID: 9014308174053350609}
   - component: {fileID: 585270510720761870}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6783,7 +6783,7 @@ GameObject:
   - component: {fileID: 1015717511511525072}
   - component: {fileID: 6142607217451761275}
   m_Layer: 0
-  m_Name: Cylinder.001
+  m_Name: Rivet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
