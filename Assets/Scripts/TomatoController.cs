@@ -45,5 +45,13 @@ public class TomatoController : MonoBehaviour
         playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * speed, ForceMode.Force);
     }
 
+    // Player loses health when colliding with an obstacle
+    private void OnCollisionEnter(Collision collision) {
+        // Check if player is colliding with an obstacle
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("Collision!");
+        }
+    }
 
 }
