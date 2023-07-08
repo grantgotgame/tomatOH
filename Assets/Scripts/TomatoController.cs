@@ -29,26 +29,8 @@ public class TomatoController : MonoBehaviour
     {
         Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
         playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
+       
 
-        /*
-        Debug.Log(context.phase);
-        if (context.interaction is TapInteraction)
-        {
-            Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
-            playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
-            Debug.Log("simple dash!");
-            Debug.Log(context.phase);
-        }
-        else if(context.interaction is HoldInteraction)
-        {
-            Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
-            playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce * 2, ForceMode.Impulse);
-            Debug.Log("Super dash!");
-            Debug.Log(context.phase);
-        }
-
-
-        Debug.Log(context.interaction);*/
     }
 
     void FixedUpdate()
@@ -79,6 +61,21 @@ public class TomatoController : MonoBehaviour
                 healthImage1.SetActive(false);
                 playerControl.PlayerInputs.Disable();
             }
+        }
+        
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            float sqrMagnitude = collision.relativeVelocity.sqrMagnitude;
+            Debug.Log("velocity:" + sqrMagnitude);
+
+            if (sqrMagnitude > 700f)
+            {
+                collision.gameObject.GetComponent<Health>().DealDamage(1);
+                
+            }
+            
+            
         }
     }
     public void PlayHitVFX()

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Danger Zone
   - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
