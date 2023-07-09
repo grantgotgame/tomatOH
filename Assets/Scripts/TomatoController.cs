@@ -114,6 +114,7 @@ public class TomatoController : MonoBehaviour
     // Display Game Over screen
     public void GameOver()
     {
+        soundManagerScript.PlaySound(soundManagerScript.scream);
         playerControl.PlayerInputs.Disable();
         gameOverText.SetActive(true);
         restartButton.SetActive(true);
@@ -124,7 +125,7 @@ public class TomatoController : MonoBehaviour
     public void GameWon()
     {
         gameWon = true;
-        soundManagerScript.PlaySound(soundManagerScript.scream);
+        soundManagerScript.PlaySound(soundManagerScript.trumpet);
         playerControl.PlayerInputs.Disable();
         winText.SetActive(true);
         restartButton.SetActive(true);
