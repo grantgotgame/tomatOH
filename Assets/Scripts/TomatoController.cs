@@ -19,6 +19,7 @@ public class TomatoController : MonoBehaviour
 
     void Awake()
     {
+        StopAllCoroutines();
         playerRb = GetComponent<Rigidbody>();
         playerControl = new PlayerControl();
         playerControl.PlayerInputs.Enable();
@@ -28,9 +29,10 @@ public class TomatoController : MonoBehaviour
     public void Dash_Performed(InputAction.CallbackContext context)
     {
         Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
-        playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
-       
-
+        if (playerRb)
+        {
+            playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
+        }
     }
 
     void FixedUpdate()
@@ -62,7 +64,7 @@ public class TomatoController : MonoBehaviour
                 playerControl.PlayerInputs.Disable();
             }
         }
-        
+
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -72,10 +74,10 @@ public class TomatoController : MonoBehaviour
             if (sqrMagnitude > 700f)
             {
                 collision.gameObject.GetComponent<Health>().DealDamage(1);
-                
+
             }
-            
-            
+
+
         }
     }
     public void PlayHitVFX()
