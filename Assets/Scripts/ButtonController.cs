@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class TitleScreen : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
     public Button startGameButton;
 
@@ -24,5 +24,10 @@ public class TitleScreen : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Level1");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Title Screen");
     }
 }
