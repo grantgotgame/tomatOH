@@ -17,12 +17,14 @@ public class Looking : MonoBehaviour
     public bool up, stop, down;
 
     private SoundManager soundManagerScript;
+    private TomatoController tomatoControllerScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Locate sound manager script
+        // Locate sound manager and tomato controller scripts
         soundManagerScript = GameObject.Find("Tomato Controller").GetComponent<SoundManager>();
+        tomatoControllerScript = GameObject.Find("Tomato Controller").GetComponent<TomatoController>();
     }
 
     void FixedUpdate()
@@ -49,7 +51,7 @@ public class Looking : MonoBehaviour
             holdTimer -= 1;
         }
 
-        if (holdTimer <= 0)
+        if (holdTimer <= 0 && !tomatoControllerScript.gameWon)
         {
             stop = false;
             down = true;

@@ -26,7 +26,7 @@ public class TomatoController : MonoBehaviour
     public GameObject restartButton;
     public GameObject mainMenuButton;
 
-    private bool gameWon;
+    public bool gameWon;
 
     [SerializeField] private ParticleSystem tomatoHitVFX;
 
