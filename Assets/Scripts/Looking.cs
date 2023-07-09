@@ -16,13 +16,15 @@ public class Looking : MonoBehaviour
     public float denominator;
     public bool up, stop, down;
 
+    private SoundManager soundManagerScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Locate sound manager script
+        soundManagerScript = GameObject.Find("Tomato Controller").GetComponent<SoundManager>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         head.transform.forward = target.transform.position - head.transform.position;
@@ -38,8 +40,8 @@ public class Looking : MonoBehaviour
         {
             up = false;
             stop = true;
-            followTimer = maxfollowTimer/denominator;
-            attackPosition.position = target.transform.position - new Vector3(offsetX,offsetY, offsetZ);
+            followTimer = maxfollowTimer / denominator;
+            attackPosition.position = target.transform.position - new Vector3(offsetX, offsetY, offsetZ);
         }
 
         if (stop)
@@ -51,7 +53,8 @@ public class Looking : MonoBehaviour
         {
             stop = false;
             down = true;
-            holdTimer = maxholdTimer/denominator;
+            holdTimer = maxholdTimer / denominator;
+            soundManagerScript.PlaySound(soundManagerScript.cleaver);
         }
 
         if (down)
