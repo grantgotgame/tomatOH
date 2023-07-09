@@ -20,12 +20,13 @@ public class ButtonController : MonoBehaviour
         
     }
 
-    // Start game on button press
+    // Start a new game on level 1
     public void StartGame()
     {
         SceneManager.LoadScene("Level1");
     }
 
+    // Load the title screen
     public void MainMenu()
     {
         SceneManager.LoadScene("Title Screen");

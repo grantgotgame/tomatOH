@@ -34,6 +34,7 @@ public class TomatoController : MonoBehaviour
         playerControl.PlayerInputs.Dash.performed += Dash_Performed;
     }
 
+    // Player dashes on key press
     public void Dash_Performed(InputAction.CallbackContext context)
     {
         Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
@@ -45,6 +46,7 @@ public class TomatoController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Allow player movement
         Vector2 inputVector = playerControl.PlayerInputs.Movement.ReadValue<Vector2>();
         playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * speed, ForceMode.Force);
     }
@@ -76,11 +78,10 @@ public class TomatoController : MonoBehaviour
             }
         }
 
-
+        // Deal damage to boss if speed is high enough
         if (collision.gameObject.CompareTag("Enemy"))
         {
             float sqrMagnitude = collision.relativeVelocity.sqrMagnitude;
-            Debug.Log("velocity:" + sqrMagnitude);
 
             if (sqrMagnitude > 700f)
             {
@@ -88,6 +89,8 @@ public class TomatoController : MonoBehaviour
             }
         }
     }
+
+    // Display a particle effect on collision
     public void PlayHitVFX()
     {
         if (tomatoHitVFX != null)
@@ -97,6 +100,7 @@ public class TomatoController : MonoBehaviour
         }
     }
 
+    // Display Game Over screen
     public void GameOver()
     {
         playerControl.PlayerInputs.Disable();
@@ -105,6 +109,7 @@ public class TomatoController : MonoBehaviour
         mainMenuButton.SetActive(true);
     }
 
+    // Display Game Won screen 
     public void GameWon()
     {
         gameWon = true;
