@@ -7765,6 +7765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2022677869}
+  - component: {fileID: 2022677870}
   m_Layer: 0
   m_Name: Enemy Chef
   m_TagString: Untagged
@@ -7789,6 +7790,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -40.02, z: 0}
+--- !u!114 &2022677870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022677868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544fc6d05473b394e8b0434df92400f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tomatoPlayerRef: {fileID: 1742791257}
+  attackDelay: 2
 --- !u!1 &2033657295
 GameObject:
   m_ObjectHideFlags: 0
@@ -10346,7 +10361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reboundForce: 3
+  reboundForce: 2
   reboundVFX: {fileID: 1460402626745563918, guid: 3a3c334c645127348b37539220d871aa, type: 3}
 --- !u!64 &4459295361478873263
 MeshCollider:
