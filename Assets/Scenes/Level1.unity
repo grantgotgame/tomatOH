@@ -4394,7 +4394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1251689740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5649,6 +5649,10 @@ MonoBehaviour:
   healthImage1: {fileID: 1597555672}
   healthImage2: {fileID: 47718247}
   healthImage3: {fileID: 419371002}
+  gameOverText: {fileID: 416049555}
+  winText: {fileID: 1251689739}
+  restartButton: {fileID: 2079841341}
+  mainMenuButton: {fileID: 2015395589}
   tomatoHitVFX: {fileID: 1460402626745563918, guid: 93ac6d8537fbdf94baeb70ee113d0a21, type: 3}
 --- !u!114 &1742791259
 MonoBehaviour:
@@ -6689,7 +6693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2015395590
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7468,7 +7472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2079841342
 RectTransform:
   m_ObjectHideFlags: 0

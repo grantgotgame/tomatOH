@@ -15,6 +15,10 @@ public class TomatoController : MonoBehaviour
     public GameObject healthImage1;
     public GameObject healthImage2;
     public GameObject healthImage3;
+    public GameObject gameOverText;
+    public GameObject winText;
+    public GameObject restartButton;
+    public GameObject mainMenuButton;
     [SerializeField] private ParticleSystem tomatoHitVFX;
 
     void Awake()
@@ -61,7 +65,7 @@ public class TomatoController : MonoBehaviour
             else if (playerHealth == 0)
             {
                 healthImage1.SetActive(false);
-                playerControl.PlayerInputs.Disable();
+                GameOver();
             }
         }
 
@@ -87,6 +91,14 @@ public class TomatoController : MonoBehaviour
             ParticleSystem instance = Instantiate(tomatoHitVFX, transform.position, tomatoHitVFX.transform.rotation);
             Destroy(instance.gameObject, instance.main.duration);
         }
+    }
+
+    public void GameOver()
+    {
+        playerControl.PlayerInputs.Disable();
+        gameOverText.SetActive(true);
+        restartButton.SetActive(true);
+        mainMenuButton.SetActive(true);
     }
 
 }
