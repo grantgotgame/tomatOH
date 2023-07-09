@@ -28,7 +28,6 @@ public class SoundManager : MonoBehaviour
     // Play a given sound
     public void PlaySound(AudioClip sound)
     {
-        source.clip = sound;
-        source.Play();
+        source.PlayOneShot(sound);
     }
 }

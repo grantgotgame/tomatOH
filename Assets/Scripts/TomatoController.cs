@@ -124,6 +124,7 @@ public class TomatoController : MonoBehaviour
     public void GameWon()
     {
         gameWon = true;
+        soundManagerScript.PlaySound(soundManagerScript.scream);
         playerControl.PlayerInputs.Disable();
         winText.SetActive(true);
         restartButton.SetActive(true);
