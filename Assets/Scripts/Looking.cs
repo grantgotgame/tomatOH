@@ -23,7 +23,7 @@ public class Looking : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         head.transform.forward = target.transform.position - head.transform.position;
         cleaverHandle.transform.position = handHolding.transform.position;
