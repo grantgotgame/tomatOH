@@ -6504,8 +6504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb22359e8186d2d42ac77ce945b83c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
-  dashForce: 30
+  speed: 100
+  dashForce: 50
   playerHealth: 3
   healthImage1: {fileID: 1597555672}
   healthImage2: {fileID: 47718247}
