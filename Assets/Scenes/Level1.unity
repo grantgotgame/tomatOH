@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276797, g: 0.21589169, b: 0.29782546, a: 1}
+  m_Sun: {fileID: 108978441}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94,8 +94,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 30b743333111f1948bcaa8090a5b9f56, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 4d509cdb2ce63c04688fe531ca82394c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2497,7 +2497,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7726df97d32284ca0912d4ae5e62c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGameButton: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
+  panel3: {fileID: 0}
+  panel4: {fileID: 0}
+  panel5: {fileID: 0}
+  panel6: {fileID: 0}
+  panel7: {fileID: 0}
 --- !u!1 &611218107
 GameObject:
   m_ObjectHideFlags: 0
@@ -9424,9 +9430,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2466410102524371862}
   - component: {fileID: 1229274633462826598}
+  - component: {fileID: 2466410102524371865}
+  - component: {fileID: 2466410102524371864}
+  - component: {fileID: 2466410102524371863}
   m_Layer: 0
   m_Name: Sphere.002
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10373,6 +10382,55 @@ Transform:
   m_Father: {fileID: 6544477429297434442}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2466410102524371863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024590890187771095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa1a4e30a783384c93444537b6a49fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reboundForce: 1.5
+  reboundVFX: {fileID: 1460402626745563918, guid: 3a3c334c645127348b37539220d871aa, type: 3}
+--- !u!114 &2466410102524371864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024590890187771095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea7ebb8cb11ee14b9e23cd9ae2e4d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 130632378}
+--- !u!64 &2466410102524371865
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024590890187771095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 212370497460711607, guid: 66bd93de01d054a26a7f3f9eae2df577, type: 3}
 --- !u!33 &2514074663980318070
 MeshFilter:
   m_ObjectHideFlags: 0
