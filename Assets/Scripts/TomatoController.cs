@@ -11,7 +11,7 @@ public class TomatoController : MonoBehaviour
     private Rigidbody playerRb;
     [SerializeField] float speed;
     [SerializeField] float dashForce;
-    [SerializeField] int playerHealth = 3;
+    public int playerHealth = 3;
     public GameObject healthImage1;
     public GameObject healthImage2;
     public GameObject healthImage3;
@@ -19,6 +19,7 @@ public class TomatoController : MonoBehaviour
     public GameObject winText;
     public GameObject restartButton;
     public GameObject mainMenuButton;
+    private bool gameWon;
     [SerializeField] private ParticleSystem tomatoHitVFX;
 
     void Awake()
@@ -48,7 +49,7 @@ public class TomatoController : MonoBehaviour
     // Player loses health when colliding with an obstacle
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Obstacle") && !gameWon)
         {
             PlayHitVFX();
             playerHealth -= 1;
@@ -78,10 +79,7 @@ public class TomatoController : MonoBehaviour
             if (sqrMagnitude > 700f)
             {
                 collision.gameObject.GetComponent<Health>().DealDamage(1);
-
             }
-
-
         }
     }
     public void PlayHitVFX()
@@ -101,4 +99,12 @@ public class TomatoController : MonoBehaviour
         mainMenuButton.SetActive(true);
     }
 
+    public void GameWon()
+    {
+        gameWon = true;
+        playerControl.PlayerInputs.Disable();
+        winText.SetActive(true);
+        restartButton.SetActive(true);
+        mainMenuButton.SetActive(true);
+    }
 }
