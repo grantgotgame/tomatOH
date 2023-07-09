@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Chef : MonoBehaviour
 {
-    [SerializeField] private TomatoController tomatoPlayerRef;
+    [SerializeField] private Transform tomatoPlayerRef;
     [SerializeField] private float attackDelay = 2f;
 
     private void Start()
@@ -14,10 +14,10 @@ public class Chef : MonoBehaviour
 
     IEnumerator AttacksCoroutine()
     {
-        Vector3 playerPos = tomatoPlayerRef.transform.position;
+        Vector3 playerPos = tomatoPlayerRef.position;
 
         yield return new WaitForSeconds(attackDelay);
 
-        //lerp hand towards playerPos
+        //play attack animation
     }
 }
