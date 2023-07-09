@@ -6230,6 +6230,8 @@ GameObject:
   - component: {fileID: 1742791258}
   - component: {fileID: 1742791259}
   - component: {fileID: 1742791260}
+  - component: {fileID: 1742791262}
+  - component: {fileID: 1742791261}
   m_Layer: 0
   m_Name: Tomato Controller
   m_TagString: Untagged
@@ -6377,6 +6379,120 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1742791261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742791254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df50cbf86313cf24fb82b7c9d21918d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boing: {fileID: 8300000, guid: e6d3c68dffd3cbb49b621622cb75ef40, type: 3}
+  cleaver: {fileID: 8300000, guid: fcd327863e3041a4c96a6993540876e9, type: 3}
+  scream: {fileID: 8300000, guid: 6d58bd703086255479dccc1078087fcd, type: 3}
+  squish: {fileID: 8300000, guid: 8bed854b9f5597445962f28e989a8eb1, type: 3}
+  swoosh: {fileID: 8300000, guid: 711f385ca2a8a7248a7f3622b7d9c849, type: 3}
+  trumpet: {fileID: 8300000, guid: 516d78e8992e0b14483f4bdbb0e5adb7, type: 3}
+--- !u!82 &1742791262
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742791254}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1750484452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7120,7 +7236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea7ebb8cb11ee14b9e23cd9ae2e4d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
   healthSlider: {fileID: 130632378}
 --- !u!23 &1902003112
 MeshRenderer:
@@ -10583,7 +10698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea7ebb8cb11ee14b9e23cd9ae2e4d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
   healthSlider: {fileID: 130632378}
 --- !u!114 &5560926279822950820
 MonoBehaviour:
@@ -11126,7 +11240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea7ebb8cb11ee14b9e23cd9ae2e4d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
   healthSlider: {fileID: 130632378}
 --- !u!114 &7820769720315166137
 MonoBehaviour:

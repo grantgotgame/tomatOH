@@ -9,26 +9,35 @@ public class TomatoController : MonoBehaviour
 {
     PlayerControl playerControl;
     private Rigidbody playerRb;
+
     [SerializeField] float speed;
     [SerializeField] float dashForce;
     public int playerHealth = 3;
+
     public GameObject healthImage1;
     public GameObject healthImage2;
     public GameObject healthImage3;
     public GameObject damagedImage1;
     public GameObject damagedImage2;
     public GameObject damagedImage3;
+
     public GameObject gameOverText;
     public GameObject winText;
     public GameObject restartButton;
     public GameObject mainMenuButton;
+
     private bool gameWon;
+
     [SerializeField] private ParticleSystem tomatoHitVFX;
+
+    private SoundManager soundManagerScript;
 
     void Awake()
     {
         StopAllCoroutines();
         playerRb = GetComponent<Rigidbody>();
+        soundManagerScript = GetComponent<SoundManager>();
+
         playerControl = new PlayerControl();
         playerControl.PlayerInputs.Enable();
         playerControl.PlayerInputs.Dash.performed += Dash_Performed;
@@ -58,6 +67,7 @@ public class TomatoController : MonoBehaviour
         {
             PlayHitVFX();
             playerHealth -= 1;
+            soundManagerScript.PlaySound(soundManagerScript.squish);
 
             // Update UI to show current health
             if (playerHealth == 2)
