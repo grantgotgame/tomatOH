@@ -1186,6 +1186,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1697704118147579502, guid: f2f7adb7d23b0de4b902618ad4b88440, type: 3}
   m_PrefabInstance: {fileID: 1216304311}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &312455403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312455404}
+  m_Layer: 0
+  m_Name: Attack Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312455404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312455403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.872377, y: 39.070705, z: 10.658154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323036256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5614274413299920512, guid: f2f7adb7d23b0de4b902618ad4b88440, type: 3}
@@ -7539,7 +7570,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902438620
 GameObject:
@@ -12361,9 +12392,21 @@ MonoBehaviour:
   target: {fileID: 1742791254}
   head: {fileID: 4460943751651180502}
   forearm: {fileID: 181586579882241846}
-  cleaver: {fileID: 41342918}
+  cleaverHandle: {fileID: 41342918}
   handHolding: {fileID: 3723172458671265392}
+  attackPosition: {fileID: 312455404}
+  maxfollowTimer: 100
+  maxholdTimer: 100
+  maxchopTimer: 100
+  followTimer: 200
+  holdTimer: 200
+  chopTimer: 200
+  offsetX: -10
+  offsetY: -4
+  offsetZ: 0
+  denominator: 1
   up: 1
+  stop: 0
   down: 0
 --- !u!1 &6577454541032668566
 GameObject:

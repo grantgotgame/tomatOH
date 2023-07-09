@@ -7,9 +7,14 @@ public class Looking : MonoBehaviour
     public GameObject target;
     public GameObject head;
     public GameObject forearm;
-    public GameObject cleaver;
+    public GameObject cleaverHandle;
     public GameObject handHolding;
-    public bool up, down;
+    public Transform attackPosition;
+    public float maxfollowTimer, maxholdTimer, maxchopTimer;
+    public float followTimer, holdTimer, chopTimer;
+    public float offsetX, offsetY, offsetZ;
+    public float denominator;
+    public bool up, stop, down;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +26,46 @@ public class Looking : MonoBehaviour
     void Update()
     {
         head.transform.forward = target.transform.position - head.transform.position;
-        cleaver.transform.position = handHolding.transform.position;
-        cleaver.transform.right = target.transform.position - cleaver.transform.position;
+        cleaverHandle.transform.position = handHolding.transform.position;
+
         if (up)
         {
             forearm.transform.forward = target.transform.position - forearm.transform.position;
+            followTimer -= 1;
+        }
+
+        if (followTimer <= 0)
+        {
+            up = false;
+            stop = true;
+            followTimer = maxfollowTimer/denominator;
+            attackPosition.position = target.transform.position - new Vector3(offsetX,offsetY, offsetZ);
+        }
+
+        if (stop)
+        {
+            holdTimer -= 1;
+        }
+
+        if (holdTimer <= 0)
+        {
+            stop = false;
+            down = true;
+            holdTimer = maxholdTimer/denominator;
+        }
+
+        if (down)
+        {
+            cleaverHandle.transform.position = attackPosition.position;
+            chopTimer -= 1;
+        }
+
+        if (chopTimer <= 0)
+        {
+            down = false;
+            up = true;
+            denominator += 0.1f;
+            chopTimer = maxchopTimer;
         }
     }
 }
