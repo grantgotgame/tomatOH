@@ -9369,7 +9369,7 @@ GameObject:
   - component: {fileID: 1449660314946687963}
   - component: {fileID: 4459295361478873260}
   m_Layer: 0
-  m_Name: Sphere.002
+  m_Name: Belly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
