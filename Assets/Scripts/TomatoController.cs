@@ -15,6 +15,9 @@ public class TomatoController : MonoBehaviour
     public GameObject healthImage1;
     public GameObject healthImage2;
     public GameObject healthImage3;
+    public GameObject damagedImage1;
+    public GameObject damagedImage2;
+    public GameObject damagedImage3;
     public GameObject gameOverText;
     public GameObject winText;
     public GameObject restartButton;
@@ -58,14 +61,17 @@ public class TomatoController : MonoBehaviour
             if (playerHealth == 2)
             {
                 healthImage3.SetActive(false);
+                damagedImage3.SetActive(true);
             }
             else if (playerHealth == 1)
             {
                 healthImage2.SetActive(false);
+                damagedImage2.SetActive(true);
             }
             else if (playerHealth == 0)
             {
                 healthImage1.SetActive(false);
+                damagedImage1.SetActive(true);
                 GameOver();
             }
         }
