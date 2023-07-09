@@ -12560,12 +12560,12 @@ MonoBehaviour:
   cleaverHandle: {fileID: 41342918}
   handHolding: {fileID: 3723172458671265392}
   attackPosition: {fileID: 312455404}
-  maxfollowTimer: 100
-  maxholdTimer: 100
-  maxchopTimer: 100
-  followTimer: 150
-  holdTimer: 150
-  chopTimer: 150
+  maxfollowTimer: 50
+  maxholdTimer: 50
+  maxchopTimer: 50
+  followTimer: 70
+  holdTimer: 70
+  chopTimer: 70
   offsetX: -10
   offsetY: -4
   offsetZ: 0
