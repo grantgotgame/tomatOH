@@ -6395,7 +6395,7 @@ MonoBehaviour:
   cleaver: {fileID: 8300000, guid: fcd327863e3041a4c96a6993540876e9, type: 3}
   scream: {fileID: 8300000, guid: 6d58bd703086255479dccc1078087fcd, type: 3}
   squish: {fileID: 8300000, guid: 8bed854b9f5597445962f28e989a8eb1, type: 3}
-  swoosh: {fileID: 8300000, guid: 711f385ca2a8a7248a7f3622b7d9c849, type: 3}
+  swoosh: {fileID: 8300000, guid: dadbe58da7e8b4d4ea3cfe42c20db978, type: 3}
   trumpet: {fileID: 8300000, guid: 516d78e8992e0b14483f4bdbb0e5adb7, type: 3}
 --- !u!82 &1742791262
 AudioSource:

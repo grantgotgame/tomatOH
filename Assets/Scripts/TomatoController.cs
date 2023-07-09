@@ -50,6 +50,7 @@ public class TomatoController : MonoBehaviour
         if (playerRb)
         {
             playerRb.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * dashForce, ForceMode.Impulse);
+            soundManagerScript.PlaySound(soundManagerScript.swoosh);
         }
     }
 
