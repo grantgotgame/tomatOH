@@ -47,7 +47,7 @@ public class Looking : MonoBehaviour
             stop = true;
             followTimer = maxfollowTimer / denominator;
             dangerZone.SetActive(true);
-            attackPosition.position = target.transform.position - new Vector3(offsetX, offsetY, offsetZ);
+            attackPosition.position = new Vector3(target.transform.position.x, 0f, target.transform.position.z) - new Vector3(offsetX, offsetY, offsetZ);
         }
 
         if (stop)
