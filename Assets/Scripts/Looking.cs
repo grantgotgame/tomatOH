@@ -47,6 +47,7 @@ public class Looking : MonoBehaviour
             stop = true;
             followTimer = maxfollowTimer / denominator;
             dangerZone.SetActive(true);
+            // Danger zone follows player but stays flush with cutting board
             attackPosition.position = new Vector3(target.transform.position.x, 0f, target.transform.position.z) - new Vector3(offsetX, offsetY, offsetZ);
         }
 
