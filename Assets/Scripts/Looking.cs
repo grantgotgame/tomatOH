@@ -9,6 +9,7 @@ public class Looking : MonoBehaviour
     public GameObject forearm;
     public GameObject cleaverHandle;
     public GameObject handHolding;
+    public GameObject dangerZone;
     public Transform attackPosition;
     public float maxfollowTimer, maxholdTimer, maxchopTimer;
     public float followTimer, holdTimer, chopTimer;
@@ -29,13 +30,15 @@ public class Looking : MonoBehaviour
 
     void FixedUpdate()
     {
+        // chef watches tomato and follows his movements with the knife
         head.transform.forward = target.transform.position - head.transform.position;
         cleaverHandle.transform.position = handHolding.transform.position;
+        forearm.transform.forward = target.transform.position - forearm.transform.position;
 
         if (up)
         {
-            forearm.transform.forward = target.transform.position - forearm.transform.position;
             followTimer -= 1;
+            dangerZone.SetActive(false);
         }
 
         if (followTimer <= 0)
@@ -43,6 +46,7 @@ public class Looking : MonoBehaviour
             up = false;
             stop = true;
             followTimer = maxfollowTimer / denominator;
+            dangerZone.SetActive(true);
             attackPosition.position = target.transform.position - new Vector3(offsetX, offsetY, offsetZ);
         }
 

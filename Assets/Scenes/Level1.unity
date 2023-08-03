@@ -7067,7 +7067,7 @@ GameObject:
   - component: {fileID: 1812254625}
   - component: {fileID: 1812254624}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Danger Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12560,6 +12560,7 @@ MonoBehaviour:
   forearm: {fileID: 181586579882241846}
   cleaverHandle: {fileID: 41342918}
   handHolding: {fileID: 3723172458671265392}
+  dangerZone: {fileID: 1812254622}
   attackPosition: {fileID: 312455404}
   maxfollowTimer: 50
   maxholdTimer: 50
