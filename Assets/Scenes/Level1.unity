@@ -6549,6 +6549,7 @@ MonoBehaviour:
   winText: {fileID: 1251689739}
   restartButton: {fileID: 2079841341}
   mainMenuButton: {fileID: 2015395589}
+  gameWon: 0
   tomatoHitVFX: {fileID: 1460402626745563918, guid: 93ac6d8537fbdf94baeb70ee113d0a21, type: 3}
 --- !u!114 &1742791259
 MonoBehaviour:
@@ -7079,14 +7080,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812254622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.8, y: -5.31, z: 0}
-  m_LocalScale: {x: 1.616195, y: 1, z: 0.15894}
+  m_LocalRotation: {x: -5.0184284e-15, y: -0.04831943, z: -2.4277203e-16, w: 0.998832}
+  m_LocalPosition: {x: -13.4, y: -5.3099976, z: -1}
+  m_LocalScale: {x: 1.6298718, y: 1, z: 0.14656083}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 312455404}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!64 &1812254624
 MeshCollider:
   m_ObjectHideFlags: 0
