@@ -7,7 +7,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class TomatoController : MonoBehaviour
 {
-    PlayerControl playerControl;
+    public PlayerControl playerControl;
     private Rigidbody playerRb;
 
     [SerializeField] float speed;
@@ -21,23 +21,19 @@ public class TomatoController : MonoBehaviour
     public GameObject damagedImage2;
     public GameObject damagedImage3;
 
-    public GameObject gameOverText;
-    public GameObject winText;
-    public GameObject restartButton;
-    public GameObject mainMenuButton;
-
-    public bool gameWon;
-
     [SerializeField] private ParticleSystem tomatoHitVFX;
 
     private SoundManager soundManagerScript;
+    private GameManager gameManagerScript;
 
     void Awake()
     {
-        StopAllCoroutines();
-        playerRb = GetComponent<Rigidbody>();
+        //find scripts
         soundManagerScript = GetComponent<SoundManager>();
-
+        gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        
+        //initialize player controls
+        playerRb = GetComponent<Rigidbody>();
         playerControl = new PlayerControl();
         playerControl.PlayerInputs.Enable();
         playerControl.PlayerInputs.Dash.performed += Dash_Performed;
@@ -64,7 +60,7 @@ public class TomatoController : MonoBehaviour
     // Player loses health when colliding with an obstacle
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle") && !gameWon)
+        if (collision.gameObject.CompareTag("Obstacle") && !gameManagerScript.gameOver)
         {
             PlayHitVFX();
             playerHealth -= 1;
@@ -85,11 +81,11 @@ public class TomatoController : MonoBehaviour
             {
                 healthImage1.SetActive(false);
                 damagedImage1.SetActive(true);
-                GameOver();
+                gameManagerScript.GameOver();
             }
         }
 
-        // Deal damage to boss if speed is high enough
+        // Deal damage to enemy if speed is high enough
         if (collision.gameObject.CompareTag("Enemy"))
         {
             float sqrMagnitude = collision.relativeVelocity.sqrMagnitude;
@@ -109,26 +105,5 @@ public class TomatoController : MonoBehaviour
             ParticleSystem instance = Instantiate(tomatoHitVFX, transform.position, tomatoHitVFX.transform.rotation);
             Destroy(instance.gameObject, instance.main.duration);
         }
-    }
-
-    // Display Game Over screen
-    public void GameOver()
-    {
-        soundManagerScript.PlaySound(soundManagerScript.scream);
-        playerControl.PlayerInputs.Disable();
-        gameOverText.SetActive(true);
-        restartButton.SetActive(true);
-        mainMenuButton.SetActive(true);
-    }
-
-    // Display Game Won screen 
-    public void GameWon()
-    {
-        gameWon = true;
-        soundManagerScript.PlaySound(soundManagerScript.trumpet);
-        playerControl.PlayerInputs.Disable();
-        winText.SetActive(true);
-        restartButton.SetActive(true);
-        mainMenuButton.SetActive(true);
     }
 }
